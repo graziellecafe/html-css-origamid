@@ -1,9 +1,11 @@
 # Curso HTML e CSS Básico - Origamid
+
 Repositório para estudos e criação de sites utilizando os conhecimentos de HTML e CSS pela plataforma Origamid
 
-## :pencil2: Introdução - HTML e CSS
+## :pencil2: Introdução: HTML e CSS
 
 ### 1. TAG
+
 As tag's (etiquetas) servem para marcarmos o conteúdo no HTML. Geralmente abrimos <a> e fechamos </a> após o conteúdo. Case insensitive, mas é boa prática escrever com minúsculas <html>.
 
 ### 2. Atributo
@@ -35,8 +37,10 @@ Através das marcações das tags que conseguimos selecionar elementos para muda
 Usado para arquivos externos ao nosso site.
 
 **Relativo**
+
 ```js
 <a href="/produtos/bicicletas.html">Bicicletas</a>
+
 Usado para arquivos internos do site.
 ```
 
@@ -67,5 +71,56 @@ a {
 }
 ```
 
-<!-- bloco css | propriedade | valor>
+### Introdução: Javascript
 
+1. Javascript
+   Javascript é uma linguagem de programação.
+
+- Altera o comportamento do documento: utilizado para modificar o estilo, criar galerias de imagens, observar as ações do usuário, puxar informações de outros sites, manipular dados e mais.
+
+2. js
+   Arquivo de texto simples terminado em .js
+
+```js
+function mudar() {
+  texto.style.color = "red";
+}
+texto.addEventListener("click", mudar());
+```
+
+Exemplo
+
+```js
+<h1 id="texto">Olá mundo</h1>
+<style>
+  h1 {
+    color: black;
+  }
+<style>
+
+<script>
+function mudar() {
+  texto.style.color = "red"
+}
+
+texto.addEventListener("click", mudar);
+</script>
+```
+
+### Box Model
+
+- **Content** (conteúdo): Define a largura inicial da caixa (salvo elementos de bloco)
+- **Padding** (preenchimento): Separa o conteúdo das bordas da caixa. É a margem interna.
+- **Border** (borda): Define bordas para a caixa
+- **Margin** (margem): Define a distância entre uma caixa e outra
+- **Width** (largura): A largura total da caixa, por padrão é o somatório do conteúdo + padding (left/right) + border (left/right).
+- **Height** (altura):A altura total da caixa, por padrão é o somatório do conteúdo + padding (top/bottom) + border (top/bottom).
+
+![Box Model explicação](imgs/box-model.png)
+
+### div
+
+A div é um elemento de bloco **block** genérico que serve para auxiliar no posicionamento dos elementos/conteúdo na tela.
+Existem também elementos semânticos como main, section, nav e outros.
+
+![Elemento div](imgs/div.png)
