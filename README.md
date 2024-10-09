@@ -124,3 +124,11 @@ A div é um elemento de bloco **block** genérico que serve para auxiliar no pos
 Existem também elementos semânticos como main, section, nav e outros.
 
 ![Elemento div](imgs/div.png)
+
+### Display inline e block
+
+Define como a caixa (box model) irá se comportar.
+
+**inline**: Respeita o fluxo da escrita sem iniciar uma nova linha, não é possível definir valores de **width**, **height** e **margin** (top/bottom) e etc. É o estilo **padrão**.
+
+**block**: Inicia uma nova linha e não permite que outros elementos sejam posicionados em sua linha. Aceita todas as propriedades do box model. Estilo inicial de elementos como **h1**, **p**, **div** e outros.
