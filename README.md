@@ -132,3 +132,91 @@ Define como a caixa (box model) irá se comportar.
 **inline**: Respeita o fluxo da escrita sem iniciar uma nova linha, não é possível definir valores de **width**, **height** e **margin** (top/bottom) e etc. É o estilo **padrão**.
 
 **block**: Inicia uma nova linha e não permite que outros elementos sejam posicionados em sua linha. Aceita todas as propriedades do box model. Estilo inicial de elementos como **h1**, **p**, **div** e outros.
+
+### Resolução de um exemplo simples
+
+```js
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carros e Bicicletas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<header>
+  <h1>Carros e Bicicletas</h1>
+</header>
+
+<body>
+  <div class="item">
+    <h2>Carro: <span>R$1999</span></h2>
+    <p>Carro modelo <span>2045</span>, com <span>200km</span> rodados</p>
+    <a href="/">Comprar carro</a>
+  </div>
+
+  <div class="item">
+    <h2>Bicicleta: <span>R$199</span></h2>
+    <p>Bicicleta modelo <span>2050</span>, com <span>20km</span> rodados.</p>
+    <a href="/">Comprar bicicleta</a>
+    <div>
+</body>
+
+</html>
+```
+
+```js
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  color: #febe01;
+}
+
+.item {
+  background-color: #111;
+  color: #fff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 4px;
+}
+
+a {
+  display: inline-block;
+  background-color: #febe01;
+  color: #332200;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+p {
+  color: #b2b2b2;
+}
+```
+
+![Exercício simples de HTML e CSS](./03-box-model/exercicio-01-box-model/exercicio-html-css.png)
+
+### img
+
+A tag **img** é utilizada para adicionarmos imagens à nossa página.
+
+- **src**: Atributo que define o caminho da imagem
+- **alt**: Texto alternativo que será lido por leitores de tela (acessibilidade), robôs e que irá aparecer caso a imagem não carregue.
+- **max-width**: 100%. Geralmente definimos um width máximo de 100% para a imagem, assim ela não cresce além do elemento pai.
+
+### grid
+
+Com o `display: grid`; é possível definirmos colunas e linhas para organizarmos os elementos que estiverem dentro do grid.
+
+- **grid-template-columns**: Define o total de colunas e o tamanho de cada uma.
+- **fr**: fr é uma unidade fracionária que terá como objetivo distribuir o espaço restante, entre os elementos do grid
+- **gap**: Cria uma distância entre os elementos do grid, tanto horizontal quanto vertical.
